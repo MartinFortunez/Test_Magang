@@ -1,0 +1,113 @@
+/* Gaya untuk elemen banner */
+.banner {
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #82d2ed, #ADD8E6);
+}
+
+.banner-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.content {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Gaya untuk container carousel */
+.highlight-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.highlight-item {
+    display: inline-block;
+    width: calc(33.33% - 30px); /* Adjust the width to fit three items per row with some margin */
+    margin: 15px; /* Increase margin for better spacing */
+    vertical-align: top;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+/* Media Queries Untuk Design Responsive*/
+@media (max-width: 768px) {
+    .banner {
+        padding: 50px 0;
+    }
+
+    .highlight-container {
+        width: 80%;
+    }
+
+    .highlight-item {
+        margin: 5% 2%;
+        width: calc(33.33% - 30px); /* Adjust the width to fit three items per row with some margin */
+    }
+}

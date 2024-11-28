@@ -1,0 +1,68 @@
+.contact-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.contact-form button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Media Queries Untuk Design Responsive*/
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 0 20px; 
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 100%;
+    }
+}
